@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mediaQuery.css">
   </head>
   <body>
-    <header class="vh-100">
+    <header>
       <nav
-        class="navbar navbar-expand-lg bg-white border-bottom border-1 shadow"
+        class="navbar navbar-expand-lg bg-white border-bottom border-1 shadow position-fixed w-100"
       >
         <div class="container">
           <a class="navbar-brand w-25" href="#">
@@ -45,19 +46,19 @@
                 <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#two">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Menu</a>
+                <a class="nav-link" href="#three">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Gallary</a>
+                <a class="nav-link" href="#four">Gallary</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Review</a>
+                <a class="nav-link" href="#five">Review</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Order</a>
+                <a class="nav-link" href="#six">Order</a>
               </li>
             </ul>
             <div class="icons w-25">
@@ -69,36 +70,818 @@
         </div>
       </nav>
       <div class="homeContent container d-flex justify-content-center">
-        <div class="row">
+        <div class="row mt-5 pt-5 d-flex flex-row">
           <div
-            class="col-lg-6 d-flex flex-column justify-content-evenly align-items-start"
+            class="w-50 p-5 d-flex justify-content-center align-items-center"
           >
-            <h1>
-              Get Fresh <span class="text-warning">Food</span> in a Easy Way
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              temporibus magnam aliquid, asperiores ut ea pariatur cumque,
-              nesciunt possimus obcaecati laboriosam dolorem quae facilis. Est
-              sint deserunt aut itaque sapiente.
-            </p>
-            <button class="w-25 btn btn-warning p-2 text-white fs-5">
-              Order Now <span class="moving fs-5 fw-bolder">-></span>
-            </button>
+            <div class="d-flex flex-column justify-content-evenly ">
+              <h1>
+                Get Fresh <span class="text-warning">Food</span> in a Easy Way
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                temporibus magnam aliquid, asperiores ut ea pariatur cumque,
+                nesciunt possimus obcaecati laboriosam dolorem quae facilis. Est
+                sint deserunt aut itaque sapiente.
+              </p>
+              <button class="w-50 btn btn-warning p-2 text-white fs-5">
+                Order Now <i class="moving fa-solid fa-arrow-right fs-6 fw-bolder"></i>
+              </button>
+            </div>
           </div>
-          <figure class="col-lg-6 p-2">
-            <img src="./assets/main_img.png" alt="buger sandwish" />
-          </figure>
+          <div class="w-50 p-5">
+            <figure> 
+              <img
+                src="./assets/main_img.png"
+                alt="buger sandwish"
+              />
+            </figure>
+          </div>
         </div>
       </div>
     </header>
-    <!-- <section class="about"></section>
-    <section class="menu"></section>
-    <section class="gallary"></section>
-    <section class="review"></section>
-    <section class="order"></section>
-    <section class="team"></section>
-    <footer></footer> -->
+    <section id="two" class="about d-flex mb-5 container-fluid">
+      <div class="row">
+        <figure class="col-6 mt-5">
+          <img
+            class="w-100 pt-5"
+            src="./assets/Food-Plate.png"
+            alt="plate of food"
+          />
+        </figure>
+        <div class="col-6 d-flex flex-column justify-content-evenly">
+          <div class="head">
+            <h2 class="text-warning">
+              About <span class="text-dark">Us</span>
+            </h2>
+            <h3>why choose us ?</h3>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+            maiores. Natus modi nesciunt molestiae nam quia dolorem? Aspernatur,
+            commodi reprehenderit. Iure molestiae laborum, maiores inventore
+            dignissimos nesciunt corporis sequi animi?
+          </p>
+          <a href="#" class="w-25 btn btn-warning p-2 text-white fs-5">
+            Order Now
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="three" class="menu text-center pt-5">
+      <h2 class="mb-5 mt-5">
+        Our <span class="text-decoration-underline text-warning">Menu</span>
+      </h2>
+      <div class="cards container">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-4 col-sm-6 card border-0">
+            <div class="cardContent p-3 text-center border border-1 rounded-2">
+              <figure>
+                <img
+                  src="./assets/buger.jpg"
+                  alt="buger sandwish"
+                />
+                <i class="fa-solid fa-heart fa-xl text-white"></i>
+              </figure>
+              <h3 class="text-warning">Burger</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+                ipsam suscipit non in alias quod consequatur asperiores.
+              </p>
+              <h5>$20.00</h5>
+              <div class="menu-star mb-3">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-regular fa-star-half-stroke text-warning"></i>
+              </div>
+              <a
+                class="w-75 align-self-center btn btn-dark p-2 text-white fs-5"
+                href="#"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 card border-0">
+            <div class="cardContent p-3 text-center border border-1 rounded-2">
+              <figure>
+                <img src="./assets/pasta.jpg" alt="pasta" />
+                <i class="fa-solid fa-heart fa-xl text-white"></i>
+              </figure>
+              <h3 class="text-warning">Pasta</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+                ipsam suscipit non in alias quod consequatur asperiores.
+              </p>
+              <h5>$20.00</h5>
+              <div class="menu-star mb-3">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-regular fa-star-half-stroke text-warning"></i>
+              </div>
+              <a
+                class="w-75 align-self-center btn btn-dark p-2 text-white fs-5"
+                href="#"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 card border-0">
+            <div class="cardContent p-3 text-center border border-1 rounded-2">
+              <figure>
+                <img src="./assets/lasagna.webp" alt="lasagna" />
+                <i class="fa-solid fa-heart fa-xl text-white"></i>
+              </figure>
+              <h3 class="text-warning">Lasagna</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+                ipsam suscipit non in alias quod consequatur asperiores.
+              </p>
+              <h5>$20.00</h5>
+              <div class="menu-star mb-3">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-regular fa-star-half-stroke text-warning"></i>
+              </div>
+              <a
+                class="w-75 align-self-center btn btn-dark p-2 text-white fs-5"
+                href="#"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 card border-0">
+            <div class="cardContent p-3 text-center border border-1 rounded-2">
+              <figure>
+                <img
+                  src="./assets/chocolate_Drink.jpg"
+                  alt="chocolate_Drink"
+                />
+                <i class="fa-solid fa-heart fa-xl text-white"></i>
+              </figure>
+              <h3 class="text-warning">Drink</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+                ipsam suscipit non in alias quod consequatur asperiores.
+              </p>
+              <h5>$20.00</h5>
+              <div class="menu-star mb-3">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-regular fa-star-half-stroke text-warning"></i>
+              </div>
+              <a
+                class="w-75 align-self-center btn btn-dark p-2 text-white fs-5"
+                href="#"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 card border-0">
+            <div class="cardContent p-3 text-center border border-1 rounded-2">
+              <figure>
+                <img
+                  src="./assets/pizza.jpg"
+                  alt="buger sandwish"
+                />
+                <i class="fa-solid fa-heart fa-xl text-white"></i>
+              </figure>
+              <h3 class="text-warning">pizza</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+                ipsam suscipit non in alias quod consequatur asperiores.
+              </p>
+              <h5>$20.00</h5>
+              <div class="menu-star mb-3">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-regular fa-star-half-stroke text-warning"></i>
+              </div>
+              <a
+                class="w-75 align-self-center btn btn-dark p-2 text-white fs-5"
+                href="#"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 card border-0">
+            <div class="cardContent p-3 text-center border border-1 rounded-2">
+              <figure >
+                <img src="./assets/Hot_dog.jpg" alt="hot dog" />
+                <i class="fa-solid fa-heart fa-xl text-white"></i>
+              </figure>
+              <h3 class="text-warning">Hot Dog</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+                ipsam suscipit non in alias quod consequatur asperiores.
+              </p>
+              <h5>$20.00</h5>
+              <div class="menu-star mb-3">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-regular fa-star-half-stroke text-warning"></i>
+              </div>
+              <a
+                class="w-75 align-self-center btn btn-dark p-2 text-white fs-5"
+                href="#"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 card border-0">
+            <div class="cardContent p-3 text-center border border-1 rounded-2">
+              <figure>
+                <img src="./assets/juse.jpg" alt="juse" />
+                <i class="fa-solid fa-heart fa-xl text-white"></i>
+              </figure>
+              <h3 class="text-warning">Juse</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+                ipsam suscipit non in alias quod consequatur asperiores.
+              </p>
+              <h5>$20.00</h5>
+              <div class="menu-star mb-3">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-regular fa-star-half-stroke text-warning"></i>
+              </div>
+              <a
+                class="w-75 align-self-center btn btn-dark p-2 text-white fs-5"
+                href="#"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 card border-0">
+            <div class="cardContent p-3 text-center border border-1 rounded-2">
+              <figure>
+                <img src="./assets/biryani.webp" alt="Biryani" />
+                <i class="fa-solid fa-heart fa-xl text-white"></i>
+              </figure>
+              <h3 class="text-warning">Biryani</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+                ipsam suscipit non in alias quod consequatur asperiores.
+              </p>
+              <h5>$20.00</h5>
+              <div class="menu-star mb-3">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-regular fa-star-half-stroke text-warning"></i>
+              </div>
+              <a
+                class="w-75 align-self-center btn btn-dark p-2 text-white fs-5"
+                href="#"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 card border-0">
+            <div class="cardContent p-3 text-center border border-1 rounded-2">
+              <figure>
+                <img
+                  src="./assets/chocolate.jpg"
+                  alt="chocolate"
+                />
+                <i class="fa-solid fa-heart fa-xl text-white"></i>
+              </figure>
+              <h3 class="text-warning">Chocolate</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+                ipsam suscipit non in alias quod consequatur asperiores.
+              </p>
+              <h5>$20.00</h5>
+              <div class="menu-star mb-3">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-regular fa-star-half-stroke text-warning"></i>
+              </div>
+              <a
+                class="w-75 align-self-center btn btn-dark p-2 text-white fs-5"
+                href="#"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 card border-0">
+            <div class="cardContent p-3 text-center border border-1 rounded-2">
+              <figure >
+                <img
+                  src="./assets/ice_cream.jpg"
+                  alt="ice_cream"
+                />
+                <i class="fa-solid fa-heart fa-xl text-white"></i>
+              </figure>
+              <h3 class="text-warning">Ice Cream</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+                ipsam suscipit non in alias quod consequatur asperiores.
+              </p>
+              <h5>$20.00</h5>
+              <div class="menu-star mb-3">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-regular fa-star-half-stroke text-warning"></i>
+              </div>
+              <a
+                class="w-75 align-self-center btn btn-dark p-2 text-white fs-5"
+                href="#"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 card border-0">
+            <div class="cardContent p-3 text-center border border-1 rounded-2">
+              <figure>
+                <img src="./assets/Spanchi.jpg" alt="Spanchi" />
+                <i class="fa-solid fa-heart fa-xl text-white"></i>
+              </figure>
+              <h3 class="text-warning">Spanchi</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+                ipsam suscipit non in alias quod consequatur asperiores.
+              </p>
+              <h5>$20.00</h5>
+              <div class="menu-star mb-3">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-regular fa-star-half-stroke text-warning"></i>
+              </div>
+              <a
+                class="w-75 align-self-center btn btn-dark p-2 text-white fs-5"
+                href="#"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 card border-0">
+            <div class="cardContent p-3 text-center border border-1 rounded-2">
+              <figure>
+                <img src="./assets/sandwich.jpg" alt="Sandwich" />
+                <i class="fa-solid fa-heart fa-xl text-white"></i>
+              </figure>
+              <h3 class="text-warning">Sandwich</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+                ipsam suscipit non in alias quod consequatur asperiores.
+              </p>
+              <h5>$20.00</h5>
+              <div class="menu-star mb-3">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-regular fa-star-half-stroke text-warning"></i>
+              </div>
+              <a
+                class="w-75 align-self-center btn btn-dark p-2 text-white fs-5"
+                href="#"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="four" class="gallary mt-5 pt-5">
+      <h2 class="mb-5 text-center pt-5">
+        Our <span class="text-decoration-underline text-warning">Gallary</span>
+      </h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6">
+            <div class="gallaryContent">
+              <figure>
+                <img src="./assets/gallary_1.jpg" alt="sandwich" />
+                <figcaption class="gallaryLayer text-center">
+                  <h4 class="text-warning">Food</h4>
+                  <p class="text-white">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Delectus illum ut aut nulla iusto voluptas.
+                  </p>
+                  <a class="btn btn-lg btn-warning text-dark" href="#"
+                    >Order Now</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="gallaryContent">
+              <figure>
+                <img src="./assets/gallary_2.jpg" alt="sandwich" />
+                <figcaption class="gallaryLayer text-center">
+                  <h4 class="text-warning">Food</h4>
+                  <p class="text-white">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Delectus illum ut aut nulla iusto voluptas.
+                  </p>
+                  <a class="btn btn-lg btn-warning text-dark" href="#"
+                    >Order Now</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="gallaryContent">
+              <figure>
+                <img src="./assets/gallary_3.jpg" alt="sandwich" />
+                <figcaption class="gallaryLayer text-center">
+                  <h4 class="text-warning">Food</h4>
+                  <p class="text-white">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Delectus illum ut aut nulla iusto voluptas.
+                  </p>
+                  <a class="btn btn-lg btn-warning text-dark" href="#"
+                    >Order Now</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="gallaryContent">
+              <figure>
+                <img src="./assets/gallary_4.jpg" alt="sandwich" />
+                <figcaption class="gallaryLayer text-center">
+                  <h4 class="text-warning">Food</h4>
+                  <p class="text-white">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Delectus illum ut aut nulla iusto voluptas.
+                  </p>
+                  <a class="btn btn-lg btn-warning text-dark" href="#"
+                    >Order Now</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="gallaryContent">
+              <figure>
+                <img src="./assets/gallary_5.jpg" alt="sandwich" />
+                <figcaption class="gallaryLayer text-center">
+                  <h4 class="text-warning">Food</h4>
+                  <p class="text-white">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Delectus illum ut aut nulla iusto voluptas.
+                  </p>
+                  <a class="btn btn-lg btn-warning text-dark" href="#"
+                    >Order Now</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="gallaryContent">
+              <figure>
+                <img src="./assets/gallary_6.jpg" alt="sandwich" />
+                <figcaption class="gallaryLayer text-center">
+                  <h4 class="text-warning">Food</h4>
+                  <p class="text-white">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Delectus illum ut aut nulla iusto voluptas.
+                  </p>
+                  <a class="btn btn-lg btn-warning text-dark" href="#"
+                    >Order Now</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="five" class="review mt-5 pt-5">
+      <h2 class="mb-5 text-center pt-5">
+        Customer
+        <span class="text-decoration-underline text-warning">Review</span>
+      </h2>
+      <div class="container">
+        <div class="row p-5">
+          <div class="col-lg-3 col-sm-6">
+            <div class="reviewCard text-center border border-1 p-3 rounded-3">
+              <figure>
+                <img
+                  src="./assets/review_1.png"
+                  alt="Customer"
+                />
+                <figcaption class="d-flex flex-column justify-content-around">
+                  <h3>John Deo</h3>
+                  <div class="menu-star mb-3">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-regular fa-star-half-stroke text-warning"></i>
+                  </div>
+                </figcaption>
+                <div class="menu-links">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+              </figure>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae accusantium ad voluptatem in aliquid placeat
+                asperiores eum unde ex officia. Facilis, sequi molestiae
+                distinctio accusantium laboriosam incidunt nisi quia provident.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="reviewCard text-center border border-1 p-3 rounded-3">
+              <figure>
+                <img
+                  src="./assets/review_2.png"
+                  alt="Customer"
+                />
+                <figcaption class="d-flex flex-column justify-content-between">
+                  <h3>John Deo</h3>
+                  <div class="menu-star mb-3">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-regular fa-star-half-stroke text-warning"></i>
+                  </div>
+                </figcaption>
+                <div class="menu-links">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+              </figure>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae accusantium ad voluptatem in aliquid placeat
+                asperiores eum unde ex officia. Facilis, sequi molestiae
+                distinctio accusantium laboriosam incidunt nisi quia provident.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="reviewCard text-center border border-1 p-3 rounded-3">
+              <figure>
+                <img
+                  src="./assets/review_3.png"
+                  alt="Customer"
+                />
+                <figcaption class="d-flex flex-column justify-content-between">
+                  <h3>John Deo</h3>
+                  <div class="menu-star mb-3">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-regular fa-star-half-stroke text-warning"></i>
+                  </div>
+                </figcaption>
+                <div class="menu-links">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+              </figure>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae accusantium ad voluptatem in aliquid placeat
+                asperiores eum unde ex officia. Facilis, sequi molestiae
+                distinctio accusantium laboriosam incidunt nisi quia provident.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="reviewCard text-center border border-1 p-3 rounded-3">
+              <figure>
+                <img
+                  src="./assets/review_4.png"
+                  alt="Customer"
+                />
+                <figcaption class="d-flex flex-column justify-content-between">
+                  <h3>John Deo</h3>
+                  <div class="menu-star mb-3">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-regular fa-star-half-stroke text-warning"></i>
+                  </div>
+                </figcaption>
+                <div class="menu-links">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+              </figure>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae accusantium ad voluptatem in aliquid placeat
+                asperiores eum unde ex officia. Facilis, sequi molestiae
+                distinctio accusantium laboriosam incidunt nisi quia provident.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="six" class="order mt-5 pt-5">
+      <h2 class="mb-5 text-center pt-5">
+        <span class="text-decoration-underline text-warning">Order</span> Now
+      </h2>
+      <div class="container">
+        <div class="row d-flex">
+          <div class="w-50">
+            <figure>
+              <img
+                class="w-100 h-100"
+                src="./assets/order_image.png"
+                alt="order image"
+              />
+            </figure>
+          </div>
+          <div class="w-50 d-flex justify-content-center align-items-center">
+            <form action="post" class="w-75" >
+              <label for="fn">First Name</label>
+              <input id="fn"  class="form-control" type="text">
+              <label for="ln">Last Name</label>
+              <input id="ln" class="form-control" type="text">
+              <label  for="em">Email</label>
+              <input id="em" class="form-control" type="email">
+              <label for="pass">Password</label>
+              <input id="pass" class="form-control"  type="text">
+              <label for="on">Order Name</label>
+              <input id="on" class="form-control" type="text">
+              <label for="amount">A mount</label>
+              <input id="amount" class="form-control" type="number">
+              <a href="#" class="btn btn-warning mt-5 text-white">Order Now</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team pb-5 mb-5">
+      <h2 class="mb-5 text-center pb-5">
+        Our
+        <span class="text-decoration-underline text-warning">Team</span>
+      </h2>
+      <div class="container mt-5 pt-5">
+        <div class="row mt-5 pt-5">
+          <div class="col-lg-3 col-sm-6">
+            <figure
+              class="text-center p-4 border border-1 border-black shadow-lg"
+            >
+              <img src="./assets/chef1.png" alt="chef1" />
+              <figcaption>
+                <h4 class="text-warning mt-4">Chef</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <div class="list-icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <figure
+              class="text-center p-4 border border-1 border-black shadow-lg"
+            >
+              <img src="./assets/chef2.png" alt="chef1" />
+              <figcaption>
+                <h4 class="text-warning mt-4">Chef</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <div class="list-icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <figure
+              class="text-center p-4 border border-1 border-black shadow-lg"
+            >
+              <img src="./assets/chef3.jpg" alt="chef3" />
+              <figcaption>
+                <h4 class="text-warning mt-4">Chef</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <div class="list-icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <figure
+              class="text-center p-4 border border-1 border-black shadow-lg"
+            >
+              <img src="./assets/chef4.jpg" alt="chef4" />
+              <figcaption>
+                <h4 class="text-warning mt-4">Chef</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <div class="list-icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid mt-5 pt-5 bg-body-secondary">
+      <div class="row">
+        <div class="col-2">
+          <div class="lists text-center">
+            <h3>Location</h3>
+            <ul class="list-unstyled">
+              <li>Sri Lanka</li>
+              <li>USA</li>
+              <li>India</li>
+              <li>Japan</li>
+              <li>Italy</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="lists text-center">
+            <h3>Quik Link</h3>
+            <ul class="list-unstyled">
+              <li><a class="text-decoration-none text-dark" href="#">Home</a></li>
+              <li><a class="text-decoration-none text-dark" href="#two">About</a></li>
+              <li><a class="text-decoration-none text-dark" href="#three">Menu</a></li>
+              <li><a class="text-decoration-none text-dark" href="#four">Gallary</a></li>
+              <li><a class="text-decoration-none text-dark" href="#five">Order</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="lists text-center">
+            <h3>Contact</h3>
+            <ul class="list-unstyled">
+              <li>+94 12 3456 789</li>
+              <li>+94 25 5568456</li>
+              <li>johndeo123@gmail.com</li>
+              <li>foodshop123@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="lists text-center">
+            <h3>Our Services</h3>
+            <ul class="list-unstyled">
+              <li>Fast Delivery</li>
+              <li>Easy Payments</li>
+              <li>24 x 7 Service</li>
+            </ul>
+        </div></div>
+        <div class="col-2">
+          <div class="lists text-center">
+            <h3>Follows</h3>
+            <ul class="list-unstyled">
+              <li class="me-2 fa-brands fa-facebook-f"></li>
+              <li class="me-2 fa-brands fa-twitter"></li>
+              <li class="me-2 fa-brands fa-instagram"></li>
+              <li class="me-2 fa-brands fa-linkedin-in"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
